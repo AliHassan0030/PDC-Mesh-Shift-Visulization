@@ -1,5 +1,5 @@
 // src/components/MeshGrid.jsx
-import { useEffect, useRef } from "react";
+// no hooks needed in this component
 
 const STAGE_LABELS = {
   idle:     { label: "INITIAL STATE",       color: "#64ffda" },

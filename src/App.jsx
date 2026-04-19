@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import ControlPanel from "./components/ControlPanel";
 import MeshGrid from "./components/MeshGrid";
 import ComplexityPanel from "./components/ComplexityPanel";
@@ -26,6 +26,7 @@ export default function App() {
   const timerRef = useRef(null);
 
   // Initialize on mount
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { runShift(16, 6); }, []);
 
   function runShift(newP, newQ) {
